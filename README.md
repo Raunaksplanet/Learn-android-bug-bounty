@@ -29,7 +29,7 @@ A curated collection of learning resources to get started with Android applicati
 * [Android Application Pen-testing Course](https://www.youtube.com/playlist?list=PL4S940IsHJYWhhYOpBk6Y-U9nTQq2omae)
 
 ## YouTube Channels for Mobile Pentesting  
-- [CorSecure](https://www.youtube.com/@CorSecure/videos)  
+- [UnderSecured](https://www.youtube.com/@UnderSecured/videos)  
 - [B3nacSec](https://www.youtube.com/@B3nacSec/videos)  
 - [LaurieWired](https://www.youtube.com/@lauriewired/videos)  
 - [AppSecHub](https://www.youtube.com/@appsechub/videos)  

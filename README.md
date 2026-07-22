@@ -14,6 +14,7 @@ A curated collection of learning resources to get started with Android applicati
 * [How to Hack Android Apps (Frida)](https://www.youtube.com/watch?v=mr64si_-YwI)
 * [How to Bypass SSL Pinning](https://www.youtube.com/watch?v=vjCF_O6aZIg)
 * [How to Root Android Emulator in 2 Minutes](https://www.youtube.com/watch?v=OLgmPxTHLuY)
+* [Darkmoon](https://github.com/ASCIT31/Dark-Moon) - Open source (GPL-3.0) autonomous AI penetration testing platform covering web, API, Active Directory and Kubernetes, with proof of exploitation and a local privacy gateway.
 * [Intercepting Android App Traffic with BurpSuite](https://www.youtube.com/watch?v=xp8ufidc514)
 * [Mobile Application Pentesting](https://www.youtube.com/playlist?list=PLxlnw7Sfbtf9pBNKKQPJTSyI8KNHvgoMJ)
 * [Finding Sensitive Data in Android Apps with Nerdwell](https://www.youtube.com/watch?v=D_-mHBkfThI)

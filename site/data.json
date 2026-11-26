@@ -3,7 +3,7 @@
     "reports": 52,
     "classes": 16,
     "resources": 142,
-    "domains": 39,
+    "domains": 38,
     "sources": {
       "Oversecured": 13,
       "HackerOne": 37,
@@ -651,16 +651,16 @@
     {
       "section": "Practice Apps",
       "title": "Android Java Challenges",
-      "url": "https://application.security/free/%20Android-Java",
+      "url": "https://web.archive.org/web/20250804225751/https://application.security/free/%20Android-Java",
       "desc": "",
-      "host": "application.security",
-      "source": "application.security",
+      "host": "web.archive.org",
+      "source": "web.archive.org",
       "kind": "research"
     },
     {
       "section": "Practice Apps",
       "title": "Mobile Hacking Lab",
-      "url": "https://www.mobilehackinglab.com/free-mobile-hacking-labs",
+      "url": "https://www.mobilehackinglab.com/",
       "desc": "",
       "host": "mobilehackinglab.com",
       "source": "mobilehackinglab.com",

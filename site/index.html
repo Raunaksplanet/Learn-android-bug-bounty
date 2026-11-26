@@ -91,7 +91,7 @@
         <div><dt>Reports</dt><dd data-stat="reports">52</dd></div>
         <div><dt>Classes</dt><dd data-stat="classes">16</dd></div>
         <div><dt>Library</dt><dd data-stat="resources">142</dd></div>
-        <div><dt>Domains</dt><dd data-stat="domains">39</dd></div>
+        <div><dt>Domains</dt><dd data-stat="domains">38</dd></div>
       </dl>
     </div>
     <div class="hero-art" id="hero-art" aria-hidden="true"></div>
@@ -148,6 +148,21 @@
 
     <div class="tabs" id="library-tabs" role="group" aria-label="Filter library"></div>
     <div class="library-grid" id="library-grid"></div>
+
+    <nav class="lib-pager" id="library-pager" aria-label="Library pages" hidden>
+      <div class="pager-controls">
+        <button class="pager-btn" type="button" id="lib-prev" aria-label="Previous library page">
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M9 3 4.5 7 9 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Prev</span>
+        </button>
+        <div class="pager-pages" id="lib-pages"></div>
+        <button class="pager-btn" type="button" id="lib-next" aria-label="Next library page">
+          <span>Next</span>
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M5 3l4.5 4L5 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <p class="pager-status" id="lib-page-status" aria-live="polite"></p>
+    </nav>
   </section>
 
   <section class="section wrap about" id="about" aria-labelledby="about-title">

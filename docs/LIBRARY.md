@@ -25,8 +25,8 @@ Practice apps, tools, guides, videos, command references and further reading for
 | Damn Insecure and Vulnerable app | Damn Insecure and vulnerable App for Android | [Open](https://github.com/payatu/diva-android) |
 | OWASP-GoatDroid-Project | OWASP GoatDroid is a fully functional and self-contained training environment for educating developers and testers on Android security | [Open](https://github.com/jackMannino/OWASP-GoatDroid-Project) |
 | Sieve mwrlabs | Sieve is a small Password Manager app created to showcase some of the common vulnerabilities found in Android applications. | [Open](https://github.com/mwrlabs/drozer/releases/download/2.3.4/sieve.apk) |
-| Android Java Challenges |   | [Open](https://application.security/free/%20Android-Java) |
-| Mobile Hacking Lab |   | [Open](https://www.mobilehackinglab.com/free-mobile-hacking-labs) |
+| Android Java Challenges |   | [Open](https://web.archive.org/web/20250804225751/https://application.security/free/%20Android-Java) |
+| Mobile Hacking Lab |   | [Open](https://www.mobilehackinglab.com/) |
 | Security Compass Android Labs |   | [Open](https://securitycompass.github.io/AndroidLabs/index.html) |
 | OWASP iGoat (Android) |   | [Open](https://code.google.com/archive/p/owasp-igoat) |
 

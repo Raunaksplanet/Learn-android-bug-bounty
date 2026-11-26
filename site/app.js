@@ -668,64 +668,125 @@
      -------------------------------------------------------------------- */
   const libTabs = $("#library-tabs");
   const libGrid = $("#library-grid");
+  const libPager = $("#library-pager");
+  const libPrev = $("#lib-prev");
+  const libNext = $("#lib-next");
+  const libPages = $("#lib-pages");
+  const libStatus = $("#lib-page-status");
+  const LIB_PER_PAGE = 12;
   // Preserve the reading list order rather than hard-coding section names.
   const sectionNames = [...new Set(A.resources.map((r) => r.section))];
+  let libSection = "all";
+  let libPage = 1;
 
-  function buildLibrary() {
-    const counts = {};
-    A.resources.forEach((r) => { counts[r.section] = (counts[r.section] || 0) + 1; });
+  function makeResCard(r) {
+    const card = document.createElement("a");
+    card.className = "res-card";
+    card.href = r.url;
+    card.target = "_blank";
+    card.rel = "noopener";
+    card.dataset.section = r.section;
 
-    const allTab = makeTab(`All`, A.resources.length, "all");
-    libTabs.append(allTab);
-    sectionNames.forEach((name) => {
-      libTabs.append(makeTab(name, counts[name] || 0, name));
-    });
+    const top = document.createElement("div");
+    top.className = "res-top";
 
-    A.resources.forEach((r) => {
-      const card = document.createElement("a");
-      card.className = "res-card reveal";
-      card.href = r.url;
-      card.target = "_blank";
-      card.rel = "noopener";
-      card.dataset.section = r.section;
+    const section = document.createElement("span");
+    section.className = "res-section";
+    section.textContent = SECTION_LABEL[r.section] || r.section;
 
-      const top = document.createElement("div");
-      top.className = "res-top";
+    const arrow = document.createElement("span");
+    arrow.className = "res-arrow";
+    arrow.innerHTML = ARROW_SVG;
+    top.append(section, arrow);
 
-      const section = document.createElement("span");
-      section.className = "res-section";
-      section.textContent = SECTION_LABEL[r.section] || r.section;
+    const title = document.createElement("h3");
+    title.className = "res-title";
+    title.textContent = r.title;
 
-      const arrow = document.createElement("span");
-      arrow.className = "res-arrow";
-      arrow.innerHTML = ARROW_SVG;
-      top.append(section, arrow);
+    card.append(top, title);
 
-      const title = document.createElement("h3");
-      title.className = "res-title";
-      title.textContent = r.title;
+    if (r.desc) {
+      const desc = document.createElement("p");
+      desc.className = "res-desc";
+      desc.textContent = r.desc;
+      card.append(desc);
+    } else {
+      // Not every entry in the reading list ships a summary. Size the card
+      // to its real content instead of padding it out to match.
+      card.classList.add("no-desc");
+    }
 
-      card.append(top, title);
+    const host = document.createElement("span");
+    host.className = "res-host";
+    host.textContent = r.host;
+    card.append(host);
 
-      if (r.desc) {
-        const desc = document.createElement("p");
-        desc.className = "res-desc";
-        desc.textContent = r.desc;
-        card.append(desc);
-      } else {
-        // Not every entry in the reading list ships a summary. Size the card
-        // to its real content instead of padding it out to match.
-        card.classList.add("no-desc");
-      }
-
-      const host = document.createElement("span");
-      host.className = "res-host";
-      host.textContent = r.host;
-      card.append(host);
-
-      libGrid.append(card);
-    });
+    return card;
   }
+
+  function libraryItems() {
+    return libSection === "all"
+      ? A.resources
+      : A.resources.filter((r) => r.section === libSection);
+  }
+
+  function renderLibraryPage({ scroll = false } = {}) {
+    const items = libraryItems();
+    const pageCount = Math.max(1, Math.ceil(items.length / LIB_PER_PAGE));
+    libPage = Math.min(Math.max(libPage, 1), pageCount);
+    const start = (libPage - 1) * LIB_PER_PAGE;
+    const shown = items.slice(start, start + LIB_PER_PAGE);
+
+    libGrid.replaceChildren(...shown.map(makeResCard));
+    renderPager(items.length, pageCount, start, shown.length);
+
+    if (scroll) {
+      libGrid.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+      const current = libPages.querySelector('[aria-current="page"]');
+      if (current) current.focus({ preventScroll: true });
+    }
+  }
+
+  function renderPager(total, pageCount, start, shown) {
+    if (total <= LIB_PER_PAGE) {
+      libPager.hidden = true;
+      libPages.replaceChildren();
+      libStatus.textContent = "";
+      return;
+    }
+    libPager.hidden = false;
+    libPrev.disabled = libPage === 1;
+    libNext.disabled = libPage === pageCount;
+
+    libPages.replaceChildren();
+    for (let page = 1; page <= pageCount; page += 1) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "pager-page";
+      button.textContent = page;
+      button.setAttribute("aria-label", `Page ${page}`);
+      if (page === libPage) {
+        button.classList.add("is-current");
+        button.setAttribute("aria-current", "page");
+      }
+      button.addEventListener("click", () => goToPage(page));
+      libPages.append(button);
+    }
+
+    const end = start + shown;
+    libStatus.textContent = `Page ${libPage} of ${pageCount}, showing ${start + 1} to ${end} of ${total}`;
+  }
+
+  function goToPage(page) {
+    const total = libraryItems().length;
+    const pageCount = Math.max(1, Math.ceil(total / LIB_PER_PAGE));
+    if (page < 1 || page > pageCount || page === libPage) return;
+    libPage = page;
+    renderLibraryPage({ scroll: true });
+  }
+
+  libPrev.addEventListener("click", () => goToPage(libPage - 1));
+  libNext.addEventListener("click", () => goToPage(libPage + 1));
 
   function makeTab(label, count, value) {
     const tab = document.createElement("button");
@@ -743,11 +804,23 @@
 
     tab.addEventListener("click", () => {
       $$(".tab", libTabs).forEach((el) => el.setAttribute("aria-pressed", el === tab ? "true" : "false"));
-      $$(".res-card", libGrid).forEach((card) => {
-        card.hidden = value !== "all" && card.dataset.section !== value;
-      });
+      libSection = value;
+      libPage = 1;
+      renderLibraryPage();
     });
     return tab;
+  }
+
+  function buildLibrary() {
+    const counts = {};
+    A.resources.forEach((r) => { counts[r.section] = (counts[r.section] || 0) + 1; });
+
+    libTabs.append(makeTab("All", A.resources.length, "all"));
+    sectionNames.forEach((name) => {
+      libTabs.append(makeTab(name, counts[name] || 0, name));
+    });
+
+    renderLibraryPage();
   }
 
   buildLibrary();
@@ -850,10 +923,7 @@
   /* --------------------------------------------------------------------
      Reveal on scroll
      -------------------------------------------------------------------- */
-  const revealTargets = [
-    ...$$(".section-head"),
-    ...$$(".res-card")
-  ].filter(Boolean);
+  const revealTargets = [...$$(".section-head")].filter(Boolean);
 
   revealTargets.forEach((el) => {
     if (!el.classList.contains("reveal")) el.classList.add("reveal");

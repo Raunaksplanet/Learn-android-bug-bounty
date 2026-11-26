@@ -1036,6 +1036,7 @@ html[data-theme="light"] .hero-art .glow { opacity: 0.75; }
   grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: start;
   gap: 12px;
+  scroll-margin-top: calc(var(--head-h) + 24px);
 }
 
 .res-card {
@@ -1057,6 +1058,73 @@ html[data-theme="light"] .hero-art .glow { opacity: 0.75; }
 .res-card[hidden] { display: none; }
 .res-card.no-desc { min-height: 0; padding-bottom: 14px; }
 .res-card.no-desc .res-host { margin-top: 6px; }
+
+.lib-pager {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line-soft);
+}
+.lib-pager[hidden] { display: none; }
+.pager-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.pager-btn,
+.pager-page {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  color: var(--text-faint);
+  background: transparent;
+  transition: color 0.18s var(--ease), background 0.18s var(--ease), border-color 0.18s var(--ease);
+}
+.pager-btn {
+  gap: 5px;
+  padding: 0 10px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.pager-btn svg { width: 12px; height: 12px; }
+.pager-page {
+  width: 32px;
+  padding: 0;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.pager-btn:hover:not(:disabled),
+.pager-page:hover {
+  color: var(--text);
+  background: var(--bg-soft);
+  border-color: var(--line-strong);
+}
+.pager-page.is-current {
+  color: var(--bg);
+  background: var(--gold);
+  border-color: var(--gold);
+}
+.pager-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.pager-status {
+  color: var(--text-faint);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 .res-top {
   display: flex;
@@ -1466,6 +1534,8 @@ html[data-theme="light"] .hero-art .glow { opacity: 0.75; }
   .library-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .foot-credits-head { grid-template-columns: minmax(0, 1fr); gap: 14px; align-items: start; }
   .credit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pager-pages { display: none; }
+  .pager-btn { height: 36px; padding: 0 14px; }
 }
 
 @media (max-width: 560px) {

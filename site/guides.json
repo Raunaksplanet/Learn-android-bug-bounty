@@ -1,0 +1,246 @@
+{
+  "guides": [
+    {
+      "title": "Mindmap: Android bug bounty checklist",
+      "url": "https://xmind.app/m/GkgaYH/",
+      "desc": "A comprehensive checklist for Android bug bounty."
+    },
+    {
+      "title": "Attacking Broadcast Receivers",
+      "url": "https://manifestsecurity.com/android-application-security-part-18/",
+      "desc": "Android security part 18."
+    },
+    {
+      "title": "Android APK Recon Setup",
+      "url": "https://web.archive.org/web/20220119073037/https://b3nac.com/posts/2017-11-10-Setup-and-tips-for-Android-APK-recon.html",
+      "desc": "Setup and tips for recon. Archived copy."
+    },
+    {
+      "title": "Hacker101: Mobile Crash Course",
+      "url": "https://www.hacker101.com/sessions/mobile_crash_course.html",
+      "desc": ""
+    },
+    {
+      "title": "Bypassing Android certificate pinning",
+      "url": "https://vavkamil.cz/2019/09/15/how-to-bypass-android-certificate-pinning-and-intercept-ssl-traffic/",
+      "desc": ""
+    },
+    {
+      "title": "An Android Hacking Primer",
+      "url": "https://medium.com/swlh/an-android-hacking-primer-3390fef4e6a0",
+      "desc": ""
+    },
+    {
+      "title": "OWASP Mobile Top Ten 2023",
+      "url": "https://fi5t.xyz/posts/owasp-mobile-top-ten-2023/",
+      "desc": ""
+    },
+    {
+      "title": "Android SMS Stealer",
+      "url": "https://maxkersten.nl/binary-analysis-course/malware-analysis/android-sms-stealer/",
+      "desc": ""
+    },
+    {
+      "title": "Hacking SMS API via Static Analysis",
+      "url": "https://blog.securitybreached.org/2020/02/19/hacking-sms-api-service-provider-of-a-company-android-app-static-security-analysis-bug-bounty-poc/",
+      "desc": ""
+    },
+    {
+      "title": "Getting Started in Android Pentesting",
+      "url": "https://blog.securitybreached.org/2020/03/17/getting-started-in-android-apps-pentesting/",
+      "desc": ""
+    },
+    {
+      "title": "Exploiting Insecure Firebase DB",
+      "url": "https://blog.securitybreached.org/2020/02/04/exploiting-insecure-firebase-database-bugbounty/",
+      "desc": ""
+    },
+    {
+      "title": "Finding Leaked AWS Creds in Android Apps",
+      "url": "https://blog.securitybreached.org/2024/06/28/finding-hidden-threats-how-i-found-leaked-aws-credentials-in-an-android-app-api-using-dast/",
+      "desc": ""
+    },
+    {
+      "title": "200+ Bounty Payouts: SQLi in Content Providers",
+      "url": "https://infosecwriteups.com/200-bug-bounty-payouts-exploiting-content-providers-with-sql-injection-abd287179b61",
+      "desc": ""
+    },
+    {
+      "title": "YesWeHack guide to Android Bug Bounty",
+      "url": "https://www.yeswehack.com/learn-bug-bounty/android-lab-mobile-hacking-tools",
+      "desc": ""
+    },
+    {
+      "title": "Intent Abuse in Google Messages for Wear OS",
+      "url": "https://towerofhanoi.it/writeups/cve-2025-12080/",
+      "desc": ""
+    },
+    {
+      "title": "Android recon for Bug Bounty hunters",
+      "url": "https://www.yeswehack.com/learn-bug-bounty/android-recon-bug-bounty-guide",
+      "desc": "A complete guide from APK extraction to mapping attack surfaces."
+    },
+    {
+      "title": "Minesweeper Hacked",
+      "url": "https://payatu.ai/blog/minesweeper-hacked-how-we-hacked-an-android-game-and-ranked-first-globally",
+      "desc": "Reverse engineering an Android game with Frida and tampering leaderboard requests."
+    }
+  ],
+  "credits": [
+    {
+      "name": "B3nac",
+      "role": "Reading list, InjuredAndroid, APK recon guide",
+      "url": "https://github.com/B3nac"
+    },
+    {
+      "name": "Sergey Toshin, Oversecured",
+      "role": "13 Android vulnerability writeups",
+      "url": "https://oversecured.com/blog"
+    },
+    {
+      "name": "David Schütz, xdavidhu",
+      "role": "Pixel lock screen bypass research",
+      "url": "https://bugs.xdavidhu.me/"
+    },
+    {
+      "name": "HackerOne report authors",
+      "role": "31 public Android reports, credited as a group",
+      "url": "https://hackerone.com/hacktivity"
+    },
+    {
+      "name": "Raunak Gupta, Biscuit Security",
+      "role": "Additional Android guides and notes",
+      "url": "https://biscuitsecurity.com/"
+    },
+    {
+      "name": "SecurityBreached, Babayaga47",
+      "role": "Android bug bounty writeups",
+      "url": "https://blog.securitybreached.org/"
+    },
+    {
+      "name": "YesWeHack",
+      "role": "Android bug bounty guides",
+      "url": "https://www.yeswehack.com/learn-bug-bounty/android-lab-mobile-hacking-tools"
+    },
+    {
+      "name": "Payatu",
+      "role": "Minesweeper reverse engineering writeup",
+      "url": "https://payatu.ai/blog/"
+    },
+    {
+      "name": "Max Kersten",
+      "role": "Android SMS stealer analysis",
+      "url": "https://maxkersten.nl/"
+    },
+    {
+      "name": "fi5t",
+      "role": "OWASP Mobile Top 10 2023 writeup",
+      "url": "https://fi5t.xyz/"
+    },
+    {
+      "name": "Vavkamil",
+      "role": "Certificate pinning bypass guide",
+      "url": "https://vavkamil.cz/"
+    },
+    {
+      "name": "Manifest Security",
+      "role": "Broadcast receiver guide",
+      "url": "https://manifestsecurity.com/"
+    },
+    {
+      "name": "Hacker101",
+      "role": "Mobile crash course",
+      "url": "https://www.hacker101.com/"
+    },
+    {
+      "name": "Xmind",
+      "role": "Hosts the Android bug bounty checklist",
+      "url": "https://xmind.app/"
+    },
+    {
+      "name": "Infosec Writeups",
+      "role": "SQLi in content providers writeup",
+      "url": "https://infosecwriteups.com/"
+    },
+    {
+      "name": "Tower of Hanoi",
+      "role": "Wear OS intent abuse writeup",
+      "url": "https://towerofhanoi.it/"
+    },
+    {
+      "name": "PentestLab",
+      "role": "Android WebView vulnerabilities",
+      "url": "https://pentestlab.blog/"
+    },
+    {
+      "name": "evilsocket",
+      "role": "Android reversing 101",
+      "url": "https://www.evilsocket.net/"
+    },
+    {
+      "name": "OWASP",
+      "role": "MSTG, Mobile Top 10 and GoatDroid",
+      "url": "https://owasp.org/"
+    },
+    {
+      "name": "Box",
+      "role": "Android security guidelines",
+      "url": "https://developer.box.com/"
+    },
+    {
+      "name": "Dai Shi",
+      "role": "Play Store on emulator guide",
+      "url": "https://medium.com/@dai_shi"
+    },
+    {
+      "name": "Bug Bounty Hunting",
+      "role": "Mobile app bug bounty tips",
+      "url": "https://medium.com/bugbountyhunting"
+    },
+    {
+      "name": "Intigriti",
+      "role": "Mobile pentesting tutorials",
+      "url": "https://www.intigriti.com/"
+    },
+    {
+      "name": "Hacking Simplified",
+      "role": "Mobile app pentesting videos",
+      "url": "https://www.youtube.com/@HackingSimplifiedAS"
+    },
+    {
+      "name": "UnderSecured",
+      "role": "Android security videos",
+      "url": "https://www.youtube.com/@UnderSecured"
+    },
+    {
+      "name": "B3nacSec",
+      "role": "Android security videos",
+      "url": "https://www.youtube.com/@B3nacSec"
+    },
+    {
+      "name": "LaurieWired",
+      "role": "Mobile reverse engineering videos",
+      "url": "https://www.youtube.com/@lauriewired"
+    },
+    {
+      "name": "AppSecHub",
+      "role": "App security videos",
+      "url": "https://www.youtube.com/@appsechub"
+    },
+    {
+      "name": "Hextree",
+      "role": "Mobile security training",
+      "url": "https://www.hextree.io/"
+    },
+    {
+      "name": "HackTricks",
+      "role": "Android pentesting checklist",
+      "url": "https://book.hacktricks.wiki/en/mobile-pentesting/android-checklist.html"
+    },
+    {
+      "name": "Open source tool maintainers",
+      "role": "Frida, Objection, Drozer, MobSF, JADX and other tools linked here",
+      "url": "https://github.com/skylot/jadx"
+    }
+  ]
+}

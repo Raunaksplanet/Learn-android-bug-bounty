@@ -1,28 +1,24 @@
+# Frida certificate setup
+
+[Back to the command index](README.md)
+
 After extracting `burpsuite.cer`, follow these steps to use it for SSL pinning bypass:
 
----
-
-### **1. Convert to DER format (required for Frida/Java apps):**
+## 1. Convert the certificate to DER
 
 ```bash
 openssl x509 -in burpsuite.cer -out cert-der.crt -outform DER
 openssl x509 -inform der -in cert.der -out burp.pem
-
 ```
 
----
-
-### **2. Push the cert to device:**
+## 2. Push the certificate to the device
 
 ```bash
 adb push cert-der.crt /data/local/tmp/
-                      /system/etc/security/cacerts/
 adb shell chmod 644 /data/local/tmp/cert-der.crt
 ```
 
----
-
-### **3. Use in Frida SSL pinning bypass script:**
+## 3. Load the certificate in a Frida script
 
 Update the Frida script to load `cert-der.crt`:
 
@@ -32,7 +28,3 @@ var bufferedInputStream = BufferedInputStream.$new(fileInputStream);
 ```
 
 Make sure the full chain (including `CertificateFactory`, `TrustManager`, etc.) is correctly hooked.
-
----
-
-Let me know which SSL pinning script you're using (`universal-android-ssl-pinning-bypass` or a custom one) for tailored help.

@@ -1,0 +1,706 @@
+{
+  "resources": [
+    {
+      "section": "Videos",
+      "title": "Mobile Pentesting by Intigriti",
+      "url": "https://www.youtube.com/playlist?list=PLmqenIp2RQcjBWzwMZQbIkbuVDmkYi_KF",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Hacker101: Mobile Crash Course",
+      "url": "https://www.hacker101.com/sessions/mobile_crash_course",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Android Bug Bounty Playlist",
+      "url": "https://www.youtube.com/playlist?list=PL1f72Oxv5SylOECx9M34pLZlNa7YkJJ14",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "How to Hack Android Apps (Frida)",
+      "url": "https://www.youtube.com/watch?v=mr64si_-YwI",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "How to Bypass SSL Pinning",
+      "url": "https://www.youtube.com/watch?v=vjCF_O6aZIg",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "How to Root Android Emulator in 2 Minutes",
+      "url": "https://www.youtube.com/watch?v=OLgmPxTHLuY",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Intercepting Android App Traffic with BurpSuite",
+      "url": "https://www.youtube.com/watch?v=xp8ufidc514",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Mobile Application Pentesting",
+      "url": "https://www.youtube.com/playlist?list=PLxlnw7Sfbtf9pBNKKQPJTSyI8KNHvgoMJ",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Finding Sensitive Data in Android Apps with Nerdwell",
+      "url": "https://www.youtube.com/watch?v=D_-mHBkfThI",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Exploiting Android Deep Links and Exported Components",
+      "url": "https://www.youtube.com/watch?v=lg1sN8njSYs",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Mobile App Pentesting by Hacking Simplified",
+      "url": "https://www.youtube.com/playlist?list=PLGJe0xGh7cH2lszCZ7qwsqouEK23XCMGp",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Android Security Testing",
+      "url": "https://www.youtube.com/watch?v=6-M_7O3A8AI",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Full Android Penetration Testing Course Playlist",
+      "url": "https://www.youtube.com/playlist?list=PLwk2o8vr7P8EyIA27vaxCXUUaGHRZj49t",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Android App Penetration Testing: OWASP Top 10",
+      "url": "https://www.youtube.com/playlist?list=PLdGbzQX3gR8JJkl2J4VmBckqhLhA_mfNY",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Bypass Biometrics in Mobile Apps",
+      "url": "https://www.youtube.com/watch?v=zIaKX3zgNF8",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Intercept traffic with Objection and Burp",
+      "url": "https://www.youtube.com/watch?v=Ft3H-3J67UE",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Hacking and Pentesting Android Apps",
+      "url": "https://www.youtube.com/playlist?list=PL5eTpNI3Q8oUbw9vozVYatATMKKsDtnoJ",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Android Application Pen-testing Course",
+      "url": "https://www.youtube.com/playlist?list=PL4S940IsHJYWhhYOpBk6Y-U9nTQq2omae",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "UnderSecured",
+      "url": "https://www.youtube.com/@UnderSecured/videos",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "B3nacSec",
+      "url": "https://www.youtube.com/@B3nacSec/videos",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "LaurieWired",
+      "url": "https://www.youtube.com/@lauriewired/videos",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "AppSecHub",
+      "url": "https://www.youtube.com/@appsechub/videos",
+      "desc": ""
+    },
+    {
+      "section": "Guides",
+      "title": "Android Pentesting Checklist (HackTricks)",
+      "url": "https://book.hacktricks.wiki/en/mobile-pentesting/android-checklist.html",
+      "desc": ""
+    },
+    {
+      "section": "Guides",
+      "title": "Android Pentesting Checklist (GitHub)",
+      "url": "https://github.com/Hrishikesh7665/Android-Pentesting-Checklist",
+      "desc": ""
+    },
+    {
+      "section": "Guides",
+      "title": "Awesome Mobile CTF Resources",
+      "url": "https://github.com/xtiankisutsa/awesome-mobile-CTF",
+      "desc": ""
+    },
+    {
+      "section": "Guides",
+      "title": "Mobile App Pentest Cheatsheet",
+      "url": "https://github.com/tanprathan/MobileApp-Pentest-Cheatsheet",
+      "desc": ""
+    },
+    {
+      "section": "Guides",
+      "title": "All Things Android Security",
+      "url": "https://github.com/jdonsec/AllThingsAndroid",
+      "desc": ""
+    },
+    {
+      "section": "Resources",
+      "title": "Oversecured Blog",
+      "url": "https://oversecured.com/blog/",
+      "desc": ""
+    },
+    {
+      "section": "Resources",
+      "title": "CorSecure Blog",
+      "url": "https://corsecure.blog/",
+      "desc": ""
+    },
+    {
+      "section": "Resources",
+      "title": "DeeSee's Android Security Resources",
+      "url": "https://blog.deesee.xyz/android/security/2020/01/13/android-application-hacking-resources.html",
+      "desc": ""
+    },
+    {
+      "section": "Guides",
+      "title": "Bypassing Certificate Pinning (vavkamil)",
+      "url": "https://vavkamil.cz/2019/09/15/how-to-bypass-android-certificate-pinning-and-intercept-ssl-traffic",
+      "desc": ""
+    },
+    {
+      "section": "Guides",
+      "title": "Android Hacking Primer",
+      "url": "https://medium.com/swlh/an-android-hacking-primer-3390fef4e6a0",
+      "desc": ""
+    },
+    {
+      "section": "Guides",
+      "title": "OWASP Mobile Top Ten 2023: fi5t",
+      "url": "https://fi5t.xyz/posts/owasp-mobile-top-ten-2023",
+      "desc": ""
+    },
+    {
+      "section": "Guides",
+      "title": "Android SMS Stealer: Max Kersten",
+      "url": "https://maxkersten.nl/binary-analysis-course/malware-analysis/android-sms-stealer",
+      "desc": ""
+    },
+    {
+      "section": "Guides",
+      "title": "Hacking SMS API via Static Analysis: Security Breached",
+      "url": "https://blog.securitybreached.org/2020/02/19/hacking-sms-api-service-provider-of-a-company-android-app-static-security-analysis-bug-bounty-poc",
+      "desc": ""
+    },
+    {
+      "section": "Guides",
+      "title": "Getting Started in Android Pentesting",
+      "url": "https://blog.securitybreached.org/2020/03/17/getting-started-in-android-apps-pentesting",
+      "desc": ""
+    },
+    {
+      "section": "Guides",
+      "title": "Exploiting Insecure Firebase DB",
+      "url": "https://blog.securitybreached.org/2020/02/04/exploiting-insecure-firebase-database-bugbounty",
+      "desc": ""
+    },
+    {
+      "section": "Guides",
+      "title": "Finding Leaked AWS Creds in Android Apps",
+      "url": "https://blog.securitybreached.org/2024/06/28/finding-hidden-threats-how-i-found-leaked-aws-credentials-in-an-android-app-api-using-dast",
+      "desc": ""
+    },
+    {
+      "section": "Guides",
+      "title": "200+ Bounty Payouts: SQLi in Content Providers",
+      "url": "https://infosecwriteups.com/200-bug-bounty-payouts-exploiting-content-providers-with-sql-injection-abd287179b61",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Pwning Android Apps at Scale",
+      "url": "https://www.youtube.com/watch?v=24MwHjqMjRk",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Hacking Mobile Applications with Frida",
+      "url": "https://www.youtube.com/watch?v=xwyXgykedzk",
+      "desc": "David Coursey"
+    },
+    {
+      "section": "Videos",
+      "title": "Unlocking secrets of proprietary software using Frida",
+      "url": "https://www.youtube.com/watch?v=QC2jQI7GLus&list=PLn4fSTVui_Gwrvhlc7HtHwg3kvZo5b4xV&index=1",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Hacking Banking app",
+      "url": "https://www.youtube.com/watch?v=iMNs8YAy6pk&list=PLn4fSTVui_Gwrvhlc7HtHwg3kvZo5b4xV&index=4",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Conference Talks by Laurie Kirk",
+      "url": "https://www.youtube.com/playlist?list=PLn_It163He30yWraeRxdKfEFlLANJnlDE",
+      "desc": "Laurie Kirk"
+    },
+    {
+      "section": "Tools",
+      "title": "BeVigil",
+      "url": "https://bevigil.com/osint-api",
+      "desc": "OSINT-based mobile app security scanner"
+    },
+    {
+      "section": "Guides",
+      "title": "Frida PDF Guide (Google Drive)",
+      "url": "https://drive.google.com/file/d/1JccmMLi6YTnyRrp_rk6vzKrUX3oXK_Yw/view",
+      "desc": ""
+    },
+    {
+      "section": "Tools",
+      "title": "Frida script to bypass SSL pinning",
+      "url": "https://gist.github.com/teknogeek/4dc35fb3801bd7f13e5f0da5b784c725",
+      "desc": ""
+    },
+    {
+      "section": "Resources",
+      "title": "HEXTREE.IO: Mobile Security Resources",
+      "url": "https://www.hextree.io/",
+      "desc": ""
+    },
+    {
+      "section": "Tools",
+      "title": "APKLeaks: Extract secrets from APKs",
+      "url": "https://github.com/dwisiswant0/apkleaks",
+      "desc": ""
+    },
+    {
+      "section": "Practice Apps",
+      "title": "Oversecured Vulnerable Android App (OVAA)",
+      "url": "https://github.com/oversecured/ovaa",
+      "desc": "A vulnerable app showing modern security bugs in Android apps"
+    },
+    {
+      "section": "Practice Apps",
+      "title": "Damn Vulnerable Bank",
+      "url": "https://github.com/rewanth1997/Damn-Vulnerable-Bank",
+      "desc": "Vulnerable Banking Application for Android"
+    },
+    {
+      "section": "Practice Apps",
+      "title": "InsecureShop",
+      "url": "https://github.com/optiv/InsecureShop",
+      "desc": "Intentionally Vulnerable Android Application"
+    },
+    {
+      "section": "Practice Apps",
+      "title": "Vuldroid",
+      "url": "https://github.com/jaiswalakshansh/Vuldroid",
+      "desc": "Vulnerable Android Application made with security issues"
+    },
+    {
+      "section": "Practice Apps",
+      "title": "InjuredAndroid",
+      "url": "https://github.com/B3nac/InjuredAndroid",
+      "desc": "A vulnerable Android application with ctf examples based on bug bounty findings"
+    },
+    {
+      "section": "Practice Apps",
+      "title": "Android-InsecureBankv2",
+      "url": "https://github.com/dineshshetty/Android-InsecureBankv2",
+      "desc": "Vulnerable Android application for learning about Android insecurities"
+    },
+    {
+      "section": "Practice Apps",
+      "title": "Damn Insecure and Vulnerable app (DIVA)",
+      "url": "https://github.com/payatu/diva-android",
+      "desc": "Damn Insecure and vulnerable App for Android"
+    },
+    {
+      "section": "Practice Apps",
+      "title": "OWASP-GoatDroid-Project",
+      "url": "https://github.com/jackMannino/OWASP-GoatDroid-Project",
+      "desc": "Fully functional training environment for Android security"
+    },
+    {
+      "section": "Practice Apps",
+      "title": "Sieve",
+      "url": "https://github.com/mwrlabs/drozer/releases/download/2.3.4/sieve.apk",
+      "desc": "Password Manager app showcasing common vulnerabilities"
+    },
+    {
+      "section": "Tools",
+      "title": "Android: PentestBook",
+      "url": "https://github.com/six2dez/pentest-book/blob/master/mobile/android.md",
+      "desc": "Mobile pentesting resources"
+    },
+    {
+      "section": "Tools",
+      "title": "Awesome-Android-Security",
+      "url": "https://github.com/saeidshirazi/awesome-android-security",
+      "desc": "Curated list of Android security resources"
+    },
+    {
+      "section": "Tools",
+      "title": "android-security-awesome",
+      "url": "https://github.com/ashishb/android-security-awesome",
+      "desc": "Collection of Android security resources"
+    },
+    {
+      "section": "Resources",
+      "title": "OWASP Mobile Top 10 2016",
+      "url": "https://www.owasp.org/index.php/Mobile_Top_10_2016-Top_10",
+      "desc": "Top mobile security risks"
+    },
+    {
+      "section": "Resources",
+      "title": "OWASP Mobile Security Testing Guide",
+      "url": "https://github.com/OWASP/owasp-mstg",
+      "desc": "Comprehensive testing guide"
+    },
+    {
+      "section": "Resources",
+      "title": "Android Applications Reversing 101",
+      "url": "https://www.evilsocket.net/2017/04/27/Android-Applications-Reversing-101",
+      "desc": "Beginner's guide to Android reversing"
+    },
+    {
+      "section": "Resources",
+      "title": "Android Security Guidelines",
+      "url": "https://developer.box.com/docs/android-security-guidelines",
+      "desc": "Box's security guidelines"
+    },
+    {
+      "section": "Resources",
+      "title": "Attacking Broadcast Receivers",
+      "url": "https://manifestsecurity.com/android-application-security-part-18",
+      "desc": "Android security part 18"
+    },
+    {
+      "section": "Resources",
+      "title": "Android WebView Vulnerabilities",
+      "url": "https://pentestlab.blog/2017/02/12/android-webview-vulnerabilities",
+      "desc": "Common WebView issues"
+    },
+    {
+      "section": "Resources",
+      "title": "Install PlayStore on Emulator",
+      "url": "https://medium.com/@dai_shi/installing-google-play-services-on-an-android-studio-emulator-fffceb2c28a1",
+      "desc": "Guide for emulator setup"
+    },
+    {
+      "section": "Resources",
+      "title": "Android Bug Bounty Tips",
+      "url": "https://medium.com/bugbountyhunting/bug-bounty-hunting-tips-2-target-their-mobile-apps-android-edition-f88a9f383fcc",
+      "desc": "Targeting mobile apps"
+    },
+    {
+      "section": "Resources",
+      "title": "Access to Protected Components",
+      "url": "https://oversecured.com/blog/android-access-to-app-protected-components/",
+      "desc": "Oversecured blog post"
+    },
+    {
+      "section": "Resources",
+      "title": "Arbitrary Code Execution",
+      "url": "https://oversecured.com/blog/android-arbitrary-code-execution-via-third-party-package-contexts/",
+      "desc": "Via third-party package contexts"
+    },
+    {
+      "section": "Resources",
+      "title": "Interception of Implicit Intents",
+      "url": "https://oversecured.com/blog/interception-of-android-implicit-intents/",
+      "desc": "Android security issue"
+    },
+    {
+      "section": "Resources",
+      "title": "Evernote Vulnerabilities",
+      "url": "https://oversecured.com/blog/evernote-universal-xss-theft-of-all-cookies-from-all-sites-and-more/",
+      "desc": "Universal XSS and cookie theft"
+    },
+    {
+      "section": "Resources",
+      "title": "Gaining Access to Content Providers",
+      "url": "https://oversecured.com/blog/gaining-access-to-arbitrary-content-providers/",
+      "desc": "Android security issue"
+    },
+    {
+      "section": "Videos",
+      "title": "Drozer Installation and Basic Usage",
+      "url": "https://www.youtube.com/watch?v=L4j7c9nLgHI",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Android Component Testing with Drozer",
+      "url": "https://www.youtube.com/watch?v=qEWHEPU58Hw",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Content Provider Exploitation",
+      "url": "https://www.youtube.com/watch?v=xrqaJFvdC9A&t=184s",
+      "desc": "Start at 3:04"
+    },
+    {
+      "section": "Videos",
+      "title": "Advanced Drozer Techniques",
+      "url": "https://www.youtube.com/watch?v=B5YwTtNzB9A",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Practical Drozer Exploits",
+      "url": "https://www.youtube.com/watch?v=H-ZjjPy2qzQ",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Drozer for Penetration Testing",
+      "url": "https://www.youtube.com/watch?v=2xQw2Dlbouw",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Frida Playlist 1",
+      "url": "https://www.youtube.com/playlist?list=PLKwUZp9HwWoC1E8S8MHHo5qLjldip3oi-",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Frida Playlist 2",
+      "url": "https://www.youtube.com/playlist?list=PLn4fSTVui_Gwrvhlc7HtHwg3kvZo5b4xV",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Frida Playlist 3",
+      "url": "https://www.youtube.com/playlist?list=PL8NKgaAXRavRargeiLrq3SAuwlLJLjKrN",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Frida Playlist 4",
+      "url": "https://www.youtube.com/playlist?list=PLGH1xiL-41XACwGHQjy1vaPIG5kqsPvY2",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Frida Tutorial: N2JtRXCofUU",
+      "url": "https://www.youtube.com/watch?v=N2JtRXCofUU&t=370s",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Frida Tutorial: R3ptGaFW1AU",
+      "url": "https://www.youtube.com/watch?v=R3ptGaFW1AU",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Frida Tutorial: 8PD6vRBgQrg",
+      "url": "https://www.youtube.com/watch?v=8PD6vRBgQrg",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Objection basics",
+      "url": "https://www.youtube.com/watch?v=Hu8m_XseXm4",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Objection certificate pinning bypass",
+      "url": "https://www.youtube.com/watch?v=1hJiMGjUnDw",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Objection + Frida Demo",
+      "url": "https://www.youtube.com/watch?v=S8Qt1dWfPjs",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Advanced Bypass Techniques",
+      "url": "https://www.youtube.com/watch?v=087Vsk5a9RY",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Bypassing Multiple Defenses",
+      "url": "https://www.youtube.com/watch?v=BQwyy338Zag",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Objection and Frida, part 1: fundamentals",
+      "url": "https://www.youtube.com/watch?v=5-0KsD7saUg",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Objection and Frida, part 2: intermediate",
+      "url": "https://www.youtube.com/watch?v=6lRIR6EQUPI",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "Objection and Frida, part 3: advanced",
+      "url": "https://www.youtube.com/watch?v=bJgR5PKv2t0",
+      "desc": ""
+    },
+    {
+      "section": "Videos",
+      "title": "BurpSuite for Android Pentesting Playlist",
+      "url": "https://www.youtube.com/playlist?list=PLH5GW4W70qp86GdyQNLY37GcIF0nVksup",
+      "desc": ""
+    },
+    {
+      "section": "Practice Apps",
+      "title": "Android Java Challenges",
+      "url": "https://application.security/free/%20Android-Java",
+      "desc": ""
+    },
+    {
+      "section": "Practice Apps",
+      "title": "Mobile Hacking Lab",
+      "url": "https://www.mobilehackinglab.com/free-mobile-hacking-labs",
+      "desc": ""
+    },
+    {
+      "section": "Practice Apps",
+      "title": "Security Compass Android Labs",
+      "url": "https://securitycompass.github.io/AndroidLabs/index.html",
+      "desc": ""
+    },
+    {
+      "section": "Practice Apps",
+      "title": "OWASP iGoat (Android)",
+      "url": "https://code.google.com/archive/p/owasp-igoat",
+      "desc": ""
+    },
+    {
+      "section": "Tools",
+      "title": "APKTool",
+      "url": "https://ibotpeaches.github.io/Apktool",
+      "desc": "Decompile/modify APK (smali-level)"
+    },
+    {
+      "section": "Tools",
+      "title": "Jadx",
+      "url": "https://github.com/skylot/jadx",
+      "desc": "JD-GUI: Convert DEX to readable Java code"
+    },
+    {
+      "section": "Tools",
+      "title": "MobSF",
+      "url": "https://github.com/MobSF/Mobile-Security-Framework-MobSF",
+      "desc": "Automated static + dynamic scanner"
+    },
+    {
+      "section": "Tools",
+      "title": "Androguard",
+      "url": "https://github.com/androguard/androguard",
+      "desc": "Python tool for APK/DEX/smali analysis"
+    },
+    {
+      "section": "Tools",
+      "title": "Bytecode Viewer",
+      "url": "https://github.com/Konloch/bytecode-viewer",
+      "desc": "Reverse engineering with multiple decompilers"
+    },
+    {
+      "section": "Tools",
+      "title": "ClassyShark",
+      "url": "https://github.com/google/android-classyshark",
+      "desc": "Explore APK classes/methods/manifest"
+    },
+    {
+      "section": "Tools",
+      "title": "QARK",
+      "url": "https://github.com/linkedin/qark",
+      "desc": "Detects security issues in APKs"
+    },
+    {
+      "section": "Tools",
+      "title": "Enjarify",
+      "url": "https://github.com/google/enjarify",
+      "desc": "dex2jar: DEX to Java JAR conversion"
+    },
+    {
+      "section": "Tools",
+      "title": "Frida",
+      "url": "https://frida.re/",
+      "desc": "Hook/modify functions at runtime"
+    },
+    {
+      "section": "Tools",
+      "title": "Objection",
+      "url": "https://github.com/sensepost/objection",
+      "desc": "Runtime exploitation via Frida (no root required)"
+    },
+    {
+      "section": "Tools",
+      "title": "Xposed",
+      "url": "https://repo.xposed.info/",
+      "desc": "LSPosed: Framework for modifying app behavior"
+    },
+    {
+      "section": "Tools",
+      "title": "Burp Suite",
+      "url": "https://portswigger.net/burp",
+      "desc": "Intercept/modify network traffic"
+    },
+    {
+      "section": "Tools",
+      "title": "Drozer",
+      "url": "https://labs.withsecure.com/tools/drozer",
+      "desc": "Android app attack framework"
+    },
+    {
+      "section": "Tools",
+      "title": "Magisk",
+      "url": "https://github.com/topjohnwu/Magisk",
+      "desc": "Systemless root; works with LSPosed modules"
+    },
+    {
+      "section": "Tools",
+      "title": "ADB",
+      "url": "https://developer.android.com/studio/command-line/adb",
+      "desc": "Debugging bridge for Android device"
+    },
+    {
+      "section": "Tools",
+      "title": "Pidcat",
+      "url": "https://github.com/JakeWharton/pidcat",
+      "desc": "Filtered Logcat output by package"
+    },
+    {
+      "section": "Tools",
+      "title": "MatLog",
+      "url": "https://github.com/plusCubed/matlog",
+      "desc": "GUI log reader (useful for non-rooted devices)"
+    }
+  ]
+}

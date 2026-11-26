@@ -1,15 +1,21 @@
-````markdown
-# MobSF Docker Usage Guide
+# MobSF with Docker
+
+[Back to the command index](README.md)
+
+## Contents
+
+- [Static analysis only](#static-analysis-only)
+- [Static and dynamic analysis](#static-and-dynamic-analysis)
 
 This file explains how to run MobSF using Docker for both static and dynamic analysis.
 
 ---
 
-## Static Analysis Only
+## Static analysis only
 
 ```bash
 sudo docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
-````
+```
 
 * Runs MobSF on `http://localhost:8000`
 * Only static analysis is supported
@@ -17,7 +23,7 @@ sudo docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mob
 
 ---
 
-## Static + Dynamic Analysis
+## Static and dynamic analysis
 
 ```bash
 docker run -it --rm \

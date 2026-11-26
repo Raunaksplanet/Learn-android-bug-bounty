@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biscuit Security Atlas: Android bug bounty</title>
+<meta name="description" content="A searchable tree of 52 public Android vulnerability writeups across 16 classes, plus practice apps, tools, guides, videos and command references from Biscuit Security's Learn Android Bug Bounty repository.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Biscuit Security Atlas">
+<meta property="og:title" content="Biscuit Security Atlas: Android bug bounty">
+<meta property="og:description" content="A searchable tree of 52 public Android vulnerability writeups across 16 classes, plus practice apps, tools, guides, videos and command references.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Biscuit Security Atlas: Android bug bounty">
+<meta name="twitter:description" content="A searchable tree of 52 public Android vulnerability writeups across 16 classes, plus practice apps, tools, guides, videos and command references.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0a0b0c">
+<script>
+  // Apply a saved theme before the first paint to avoid a dark flash.
+  try {
+    if (localStorage.getItem("atlas-theme") === "light") {
+      document.documentElement.dataset.theme = "light";
+    }
+  } catch (e) { /* storage unavailable */ }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0b0c'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%23d9b878' stroke-width='1.4'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%23d9b878'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip-link" href="#tree">Skip to the report tree</a>
+
+<header class="site-head" id="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="#top" aria-label="Biscuit Security Atlas, home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <circle cx="16" cy="16" r="12.5" stroke="currentColor" stroke-width="1.1" opacity=".45"/>
+          <circle cx="16" cy="16" r="7" stroke="currentColor" stroke-width="1.1" opacity=".75"/>
+          <circle cx="16" cy="16" r="2" fill="currentColor"/>
+          <path d="M16 1.5v5M16 25.5v5M1.5 16h5M25.5 16h5" stroke="currentColor" stroke-width="1.1"/>
+        </svg>
+      </span>
+      <span class="brand-text"><strong>Biscuit Security</strong><span>Atlas</span></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Sections">
+      <a href="#tree" class="nav-link is-active" data-nav="tree">Tree</a>
+      <a href="#library" class="nav-link" data-nav="library">Library</a>
+      <a href="#about" class="nav-link" data-nav="about">About</a>
+    </nav>
+
+    <div class="head-actions">
+      <button class="search-trigger" type="button" id="search-trigger" aria-label="Search the atlas">
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="5.5" stroke="currentColor" stroke-width="1.4"/><path d="m13.2 13.2 3.3 3.3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <span>Search</span>
+        <kbd>/</kbd>
+      </button>
+      <button class="icon-btn theme-toggle" type="button" id="theme-toggle" aria-label="Switch to light theme" title="Switch theme">
+        <svg class="icon-sun" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="3.6" stroke="currentColor" stroke-width="1.4"/><path d="M10 1.8v2M10 16.2v2M1.8 10h2M16.2 10h2M4.2 4.2l1.4 1.4M14.4 14.4l1.4 1.4M15.8 4.2l-1.4 1.4M5.6 14.4l-1.4 1.4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16.5 12.2A7 7 0 0 1 7.8 3.5a7 7 0 1 0 8.7 8.7Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      </button>
+      <a class="gh-btn" href="https://github.com/Raunaksplanet/Learn-android-bug-bounty" target="_blank" rel="noopener" aria-label="Source repository on GitHub">
+        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 .9a9.1 9.1 0 0 0-2.9 17.7c.45.1.62-.2.62-.43v-1.5c-2.5.55-3.03-1.2-3.03-1.2-.41-1.05-1-1.33-1-1.33-.82-.56.06-.55.06-.55.9.07 1.37.93 1.37.93.8 1.38 2.1 1 2.62.76.08-.6.31-1 .57-1.23-2-.23-4.1-1-4.1-4.46 0-.99.35-1.8.93-2.43-.1-.23-.4-1.15.09-2.4 0 0 .76-.24 2.48.93a8.6 8.6 0 0 1 4.52 0c1.72-1.17 2.48-.93 2.48-.93.49 1.25.18 2.17.09 2.4.58.63.93 1.44.93 2.43 0 3.47-2.1 4.23-4.11 4.45.32.28.6.83.6 1.68v2.5c0 .24.17.54.62.44A9.1 9.1 0 0 0 10 .9Z"/></svg>
+        <span>GitHub</span>
+        <svg class="arrow" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M4 10 10 4M5 4h5v5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+</header>
+
+<main id="top">
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> A field index of Android security writeups</p>
+      <h1 id="hero-title">Public Android<br>security writeups,<br><span class="accent">in one tree.</span></h1>
+      <p class="lede">A browsable index of B3nac’s public Android vulnerability reports and Biscuit Security’s field notes: practice apps, tools, command references and guides for testing them.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#tree">
+          Explore the tree
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3.8 8.8 8 13l4.2-4.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#library">
+          Browse the library
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9.2 4.2 13 8l-3.8 3.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <dl class="stats" aria-label="Collection statistics">
+        <div><dt>Reports</dt><dd data-stat="reports">52</dd></div>
+        <div><dt>Classes</dt><dd data-stat="classes">16</dd></div>
+        <div><dt>Library</dt><dd data-stat="resources">142</dd></div>
+        <div><dt>Domains</dt><dd data-stat="domains">39</dd></div>
+      </dl>
+    </div>
+    <div class="hero-art" id="hero-art" aria-hidden="true"></div>
+  </section>
+
+  <section class="section wrap" id="tree" aria-labelledby="tree-title">
+    <div class="section-head">
+      <div class="section-intro">
+        <p class="kicker"><span>01</span> The tree</p>
+        <h2 id="tree-title">Explore the attack surface</h2>
+        <p class="section-sub">Each branch is a vulnerability class. Open one to read the writeups inside; every entry links straight to the original source.</p>
+      </div>
+      <div class="tree-controls" aria-label="Tree controls">
+        <button class="mini-btn" type="button" data-tree-action="expand">Expand all</button>
+        <span class="control-divider" aria-hidden="true"></span>
+        <button class="mini-btn" type="button" data-tree-action="collapse">Collapse all</button>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="search-field">
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="5.5" stroke="currentColor" stroke-width="1.4"/><path d="m13.2 13.2 3.3 3.3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <input type="search" id="search" placeholder="Search reports, classes, keywords…" autocomplete="off" spellcheck="false" aria-label="Search reports and classes">
+        <kbd class="search-kbd" aria-hidden="true">/</kbd>
+        <button class="search-clear" type="button" id="search-clear" aria-label="Clear search" hidden>
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="m4 4 6 6M10 4l-6 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="chips" id="source-chips" role="group" aria-label="Filter reports by source"></div>
+    </div>
+
+    <div class="tree-status" id="tree-status" aria-live="polite">52 reports across 16 classes</div>
+
+    <div class="tree-shell">
+      <div class="tree" id="tree-root"></div>
+    </div>
+
+    <div class="empty-state" id="empty-state" hidden>
+      <span class="empty-mark" aria-hidden="true">∅</span>
+      <h3>No reports match that search</h3>
+      <p id="empty-copy">Try a broader term, or clear the filters.</p>
+      <button class="btn btn-ghost" type="button" id="empty-reset">Reset filters</button>
+    </div>
+  </section>
+
+  <section class="section wrap" id="library" aria-labelledby="library-title">
+    <div class="section-head">
+      <div class="section-intro">
+        <p class="kicker"><span>02</span> Field kit</p>
+        <h2 id="library-title">Practice apps, tools &amp; field notes</h2>
+        <p class="section-sub">Vulnerable targets, tooling, command references and guides that make the reports usable.</p>
+      </div>
+    </div>
+
+    <div class="tabs" id="library-tabs" role="group" aria-label="Filter library"></div>
+    <div class="library-grid" id="library-grid"></div>
+  </section>
+
+  <section class="section wrap about" id="about" aria-labelledby="about-title">
+    <div class="about-copy">
+      <p class="kicker"><span>03</span> About</p>
+      <h2 id="about-title">A reading room,<br>not a dashboard.</h2>
+      <p>This atlas is the web index for <a href="https://github.com/Raunaksplanet/Learn-android-bug-bounty" target="_blank" rel="noopener">Raunak Gupta’s Learn Android Bug Bounty repository</a>. The report tree comes from <a href="https://github.com/B3nac/Android-Reports-and-Resources" target="_blank" rel="noopener">B3nac’s Android-Reports-and-Resources</a>; the library adds the practice apps, tools, videos and command references maintained in the repository.</p>
+      <p>Nothing is mirrored or rehosted. Every entry links to the original report, article, video or tool. Class summaries are editorial aids for scanning; titles, links and source labels come from the reading list and the field notes. No accounts, no analytics, no tracking. Just a static page and a data file.</p>
+    </div>
+    <aside class="credits" aria-label="Colophon and source">
+      <p class="credits-label">Colophon</p>
+      <dl>
+        <div><dt>Reading list</dt><dd>B3nac, Android-Reports-and-Resources</dd></div>
+        <div><dt>Field notes</dt><dd>Raunak Gupta, Learn Android Bug Bounty</dd></div>
+        <div><dt>Research</dt><dd>The original report and article authors</dd></div>
+        <div><dt>Build</dt><dd>Static HTML, CSS &amp; JavaScript. No frameworks or tracking.</dd></div>
+      </dl>
+      <div class="credits-actions">
+        <a class="btn btn-primary btn-sm" href="https://github.com/Raunaksplanet/Learn-android-bug-bounty" target="_blank" rel="noopener">
+          View the source
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M4 10 10 4M5 4h5v5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button class="btn btn-ghost btn-sm" type="button" id="copy-citation">Copy citation</button>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <section class="foot-credits wrap" id="credits" aria-labelledby="credits-title">
+    <div class="foot-credits-head">
+      <div>
+        <p class="kicker"><span>04</span> Credits</p>
+        <h2 id="credits-title">Research and resources</h2>
+      </div>
+      <p class="foot-credits-note">Every report, guide, video and tool here was published by someone else. These are the researchers, writers, channels and projects behind the links. HackerOne report authors are credited as a group because the reading list links to report IDs rather than author profiles.</p>
+    </div>
+    <ul class="credit-grid" id="credit-grid"></ul>
+  </section>
+
+  <div class="wrap foot-inner">
+    <div class="foot-brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12.5" stroke="currentColor" stroke-width="1.1" opacity=".45"/><circle cx="16" cy="16" r="7" stroke="currentColor" stroke-width="1.1" opacity=".75"/><circle cx="16" cy="16" r="2" fill="currentColor"/></svg>
+      </span>
+      <p>Learn Android Bug Bounty<span>Curated by Biscuit Security.</span></p>
+    </div>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="#tree">Tree</a>
+      <a href="#library">Library</a>
+      <a href="#about">About</a>
+      <a href="#credits">Credits</a>
+      <a href="https://github.com/Raunaksplanet/Learn-android-bug-bounty" target="_blank" rel="noopener">Source ↗</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- Report detail drawer -->
+<div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" aria-hidden="true">
+  <div class="drawer-head">
+    <span class="drawer-path" id="drawer-path">Reports</span>
+    <button class="icon-btn" type="button" id="drawer-close" aria-label="Close report details">
+      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="drawer-body">
+    <div class="drawer-tags">
+      <span class="source-badge" id="drawer-source">HackerOne</span>
+      <span class="drawer-class" id="drawer-class">XSS</span>
+    </div>
+    <h2 class="drawer-title" id="drawer-title">Report title</h2>
+    <p class="drawer-desc" id="drawer-desc"></p>
+    <dl class="drawer-meta">
+      <div><dt>Host</dt><dd id="drawer-host">hackerone.com</dd></div>
+      <div><dt>Path</dt><dd id="drawer-path-full">Tree / Class / Report</dd></div>
+      <div><dt>Link</dt><dd id="drawer-url" class="mono"></dd></div>
+    </dl>
+    <div class="drawer-actions">
+      <a class="btn btn-primary" id="drawer-open" href="#" target="_blank" rel="noopener">
+        Open original
+        <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M4 10 10 4M5 4h5v5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="btn btn-ghost" type="button" id="drawer-copy">Copy link</button>
+    </div>
+    <p class="drawer-note">You’ll leave this atlas and open the original writeup.</p>
+  </div>
+</div>
+
+<noscript>
+  <div class="wrap" style="padding:40px 24px;">
+    <p>This atlas needs JavaScript to draw the tree. You can still browse the repository directly on
+    <a href="https://github.com/Raunaksplanet/Learn-android-bug-bounty">GitHub</a>.</p>
+  </div>
+</noscript>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

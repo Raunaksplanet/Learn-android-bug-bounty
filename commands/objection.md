@@ -1,11 +1,19 @@
-You’re right to ask—while the previous list covers the **most commonly used** Objection commands for Android, there are **additional commands and variations** that may not be as well-documented. Below is an **expanded breakdown**, including some **hidden/lesser-known** commands and advanced usage tips.
+# Objection command reference
 
----
+A working reference for Objection on Android, tested with Objection 1.11 and newer.
 
-### **📌 Full(er) List of Objection Android Commands**  
-*(Tested on Objection v1.11.0+)*  
+## Contents
 
-#### **🔹 1. Root & Jailbreak Detection Bypass**  
+- [1. Root and jailbreak detection bypass](#1-root-and-jailbreak-detection-bypass)
+- [2. SSL pinning bypass](#2-ssl-pinning-bypass)
+- [3. Hooking and runtime manipulation](#3-hooking-and-runtime-manipulation)
+- [4. Memory manipulation with Frida](#4-memory-manipulation-with-frida)
+- [5. File system and databases](#5-file-system-and-databases)
+- [6. Intents and app control](#6-intents-and-app-control)
+- [7. Hidden and advanced commands](#7-hidden-and-advanced-commands)
+
+## 1. Root and jailbreak detection bypass
+
 | Command | Description |
 |---------|------------|
 | `android root disable` | Disable common root checks (RootBeer, SafetyNet, etc.) |
@@ -15,7 +23,8 @@ You’re right to ask—while the previous list covers the **most commonly used*
 
 ---
 
-#### **🔹 2. SSL Pinning Bypass**  
+## 2. SSL pinning bypass
+
 | Command | Description |
 |---------|------------|
 | `android sslpinning disable` | Bypass OkHttp, Xamarin, TrustManager, etc. |
@@ -24,10 +33,10 @@ You’re right to ask—while the previous list covers the **most commonly used*
 
 ---
 
-#### **🔹 3. Hooking & Runtime Manipulation**  
-*(Most powerful features!)*  
+## 3. Hooking and runtime manipulation
 
-##### **Class & Method Exploration**  
+### Class and Method Exploration
+
 | Command | Description |
 |---------|------------|
 | `android hooking list classes` | List **all** loaded classes |
@@ -39,7 +48,8 @@ You’re right to ask—while the previous list covers the **most commonly used*
 | `android hooking list activities` | List all app activities |
 | `android hooking list services` | List all background services |
 
-##### **Advanced Hooking**  
+### Advanced hooking
+
 | Command | Description |
 |---------|------------|
 | `android hooking watch method --dump-args --dump-return` | Log method arguments + return value |
@@ -48,7 +58,8 @@ You’re right to ask—while the previous list covers the **most commonly used*
 
 ---
 
-#### **🔹 4. Memory Manipulation (Frida Native)**  
+## 4. Memory manipulation with Frida
+
 | Command | Description |
 |---------|------------|
 | `memory list modules` | List loaded native libraries (e.g., `libnative.so`) |
@@ -59,7 +70,8 @@ You’re right to ask—while the previous list covers the **most commonly used*
 
 ---
 
-#### **🔹 5. File System & Databases**  
+## 5. File system and databases
+
 | Command | Description |
 |---------|------------|
 | `file ls <path>` | List files (e.g., `/data/data/com.app`) |
@@ -71,7 +83,8 @@ You’re right to ask—while the previous list covers the **most commonly used*
 
 ---
 
-#### **🔹 6. Intent & App Control**  
+## 6. Intents and app control
+
 | Command | Description |
 |---------|------------|
 | `android intent launch_activity <Activity>` | Start an Activity (e.g., `com.app.LoginActivity`) |
@@ -83,8 +96,8 @@ You’re right to ask—while the previous list covers the **most commonly used*
 
 ---
 
-#### **🔹 7. Hidden/Advanced Commands**  
-*(Less documented but useful!)*  
+## 7. Hidden and advanced commands
+
 | Command | Description |
 |---------|------------|
 | `android clipboard monitor` | Monitor clipboard changes |
@@ -94,20 +107,8 @@ You’re right to ask—while the previous list covers the **most commonly used*
 
 ---
 
-### **💡 How to Discover More?**  
-1. **Check Frida’s API**: Objection wraps Frida, so some features come from Frida itself.  
-   - Example: `android heap dump` → Uses Frida’s `Memory.scan()`.  
-2. **Use `help <command>`**: Some commands have hidden options.  
-   ```bash
-   help android hooking watch method
-   ```  
-3. **Read the Source**: Objection’s [GitHub](https://github.com/sensepost/objection) has the full command list.  
+## Discover more
 
----
-
-### **🚀 Final Notes**  
-- **Not all commands work on every app** (depends on protections).  
-- **Combine with Frida scripts** for advanced hacking (e.g., hooking native code).  
-- **Updates**: New commands are added in newer versions.  
-
-Want a deep dive on a specific command? Let me know! 🔍
+- Run `help <command>` inside an Objection session.
+- Read the [Objection documentation](https://github.com/sensepost/objection).
+- Check the [Frida API](https://frida.re/docs/) for the hooks Objection wraps.

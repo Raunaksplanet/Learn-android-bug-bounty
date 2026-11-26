@@ -1,0 +1,82 @@
+{
+  "resources": [
+    {
+      "section": "Commands",
+      "title": "Drozer command reference",
+      "url": "https://github.com/Raunaksplanet/Learn-android-bug-bounty/blob/main/commands/drozer.md",
+      "desc": "Modules for inspecting packages, providers, activities and exported components."
+    },
+    {
+      "section": "Commands",
+      "title": "General Android commands",
+      "url": "https://github.com/Raunaksplanet/Learn-android-bug-bounty/blob/main/commands/general.md",
+      "desc": "Emulator, ADB, Frida, Objection and MobSF commands."
+    },
+    {
+      "section": "Commands",
+      "title": "Objection command reference",
+      "url": "https://github.com/Raunaksplanet/Learn-android-bug-bounty/blob/main/commands/objection.md",
+      "desc": "Root, SSL pinning, hooking, memory, file system and intent commands."
+    },
+    {
+      "section": "Commands",
+      "title": "Frida certificate setup",
+      "url": "https://github.com/Raunaksplanet/Learn-android-bug-bounty/blob/main/commands/frida-cert.md",
+      "desc": "Convert, push and load a Burp certificate for Frida scripts."
+    },
+    {
+      "section": "Commands",
+      "title": "Android emulator certificate setup",
+      "url": "https://github.com/Raunaksplanet/Learn-android-bug-bounty/blob/main/commands/cert-install.md",
+      "desc": "Install a Burp CA certificate in an emulator system trust store."
+    },
+    {
+      "section": "Commands",
+      "title": "MobSF with Docker",
+      "url": "https://github.com/Raunaksplanet/Learn-android-bug-bounty/blob/main/commands/mobsf.md",
+      "desc": "Run MobSF for static and dynamic analysis in Docker."
+    },
+    {
+      "section": "Commands",
+      "title": "Pidcat logging",
+      "url": "https://github.com/Raunaksplanet/Learn-android-bug-bounty/blob/main/commands/pidcat.md",
+      "desc": "Filter logcat output by package."
+    },
+    {
+      "section": "Commands",
+      "title": "Deeplink discovery",
+      "url": "https://github.com/Raunaksplanet/Learn-android-bug-bounty/blob/main/commands/deeplinks.md",
+      "desc": "Find deeplinks with Android-Deeplink-Parser and Drozer."
+    },
+    {
+      "section": "Commands",
+      "title": "Command snippets",
+      "url": "https://github.com/Raunaksplanet/Learn-android-bug-bounty/blob/main/commands/snippets.md",
+      "desc": "Compact emulator, ADB, Frida and Objection snippets."
+    },
+    {
+      "section": "Tools",
+      "title": "Emulator certificate installer",
+      "url": "https://github.com/Raunaksplanet/Learn-android-bug-bounty/blob/main/scripts/cert-install.sh",
+      "desc": "Shell script that boots an AVD and installs a Burp certificate."
+    },
+    {
+      "section": "Tools",
+      "title": "Sensitive word grep",
+      "url": "https://github.com/Raunaksplanet/Learn-android-bug-bounty/blob/main/scripts/grep-sensitive-words.sh",
+      "desc": "Search decompiled APK files for secrets and risky strings."
+    },
+    {
+      "section": "Tools",
+      "title": "Windows emulator bootstrap",
+      "url": "https://github.com/Raunaksplanet/Learn-android-bug-bounty/blob/main/scripts/androidbb.bat",
+      "desc": "Start a rooted emulator and frida-server on Windows."
+    },
+    {
+      "section": "Tools",
+      "title": "WebView bridge test page",
+      "url": "https://github.com/Raunaksplanet/Learn-android-bug-bounty/blob/main/scripts/exploit.html",
+      "desc": "Minimal HTML page for testing a JavaScript bridge."
+    }
+  ]
+}

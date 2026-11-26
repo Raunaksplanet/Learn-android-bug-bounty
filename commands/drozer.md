@@ -1,3 +1,9 @@
+# Drozer command reference
+
+Common Drozer modules for inspecting an Android app's attack surface.
+
+[Back to the command index](README.md)
+
 | Command                                                   | Description                                  | Example / Notes                                                       |
 | --------------------------------------------------------- | -------------------------------------------- | --------------------------------------------------------------------- |
 | `help`                                                    | Show help menu with commands                 | `help`                                                                |

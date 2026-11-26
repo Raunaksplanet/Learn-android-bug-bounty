@@ -1,4 +1,11 @@
-# Android Deeplink Discovery Methods
+# Android deeplink discovery
+
+[Back to the command index](README.md)
+
+## Contents
+
+- [Android-Deeplink-Parser](#1-using-android-deeplink-parser)
+- [Drozer](#2-using-drozer-live-device-method)
 
 ## 1. Using Android-Deeplink-Parser
 

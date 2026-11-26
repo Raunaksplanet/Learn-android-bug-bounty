@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# burp_cert_install.sh — Push a Burp Suite CA cert into an Android emulator's
+# burp_cert_install.sh: push a Burp Suite CA cert into an Android emulator's
 # system trust store, fully automated.
 #
 # Usage:
@@ -25,7 +25,7 @@ usage() {
 Usage: $0 -c <burp_cert.der> -a <avd_name> [-w seconds]
 
   -c   Path to Burp Suite CA cert in DER format (required)
-  -a   Name of the AVD to launch (required) — must already exist (avdmanager list avd)
+  -a   Name of the AVD to launch (required), must already exist (avdmanager list avd)
   -w   Boot timeout in seconds (default: $BOOT_TIMEOUT)
   -h   Show this help
 EOF
@@ -95,7 +95,7 @@ fi
 EXISTING_SERIAL=""
 if adb devices | grep -q "emulator-"; then
   EXISTING_SERIAL=$(adb devices | awk '/emulator-/{print $1; exit}')
-  LOG "An emulator instance ($EXISTING_SERIAL) is already running — reusing it."
+  LOG "An emulator instance ($EXISTING_SERIAL) is already running, reusing it."
 fi
 
 SERIAL="$EXISTING_SERIAL"
@@ -143,7 +143,7 @@ wait_for_boot() {
 
 wait_for_boot "$SERIAL" "$BOOT_TIMEOUT" || exit 1
 
-# small extra settle time — boot_completed can flip before services (like adbd root) settle
+# small extra settle time. boot_completed can flip before services (like adbd root) settle
 sleep 5
 
 # ---------- root + remount ----------
@@ -152,7 +152,7 @@ adb -s "$SERIAL" root
 # adb root restarts adbd; wait for device to come back
 adb -s "$SERIAL" wait-for-device
 
-# retry remount a few times — can race right after root restart
+# retry remount a few times because it can race right after root restart
 remount_ok=false
 for i in {1..5}; do
   if adb -s "$SERIAL" remount 2>&1 | tee /tmp/remount.log | grep -qiE "remount succeeded|now writable"; then
@@ -194,7 +194,7 @@ adb -s "$SERIAL" shell chmod 644 /system/etc/security/cacerts/"${HASH}".0
 
 # sanity check it landed
 if ! adb -s "$SERIAL" shell ls /system/etc/security/cacerts/ | grep -q "${HASH}.0"; then
-  ERR "Push verification failed — cert not found on device after push."
+  ERR "Push verification failed: cert not found on device after push."
   exit 1
 fi
 OK "Cert pushed and verified on device."
@@ -207,5 +207,5 @@ adb -s "$SERIAL" wait-for-device
 wait_for_boot "$SERIAL" "$REBOOT_TIMEOUT" || exit 1
 
 OK "Done. Burp CA (hash ${HASH}) is installed as a system-trusted root on $SERIAL."
-LOG "If HTTPS traffic still fails for a specific app, it's doing SSL pinning —"
+LOG "If HTTPS traffic still fails for a specific app, it's doing SSL pinning."
 LOG "use Frida (frida-android-unpinning / objection) to bypass it."

@@ -1,12 +1,20 @@
-# PIDCAT for Android Bug Bounty Logging
+# Pidcat for Android logging
 
-A focused `logcat` wrapper for Android security researchers and bug bounty hunters — helps filter logs from a specific app instead of the entire device, making vulnerability analysis faster and cleaner.
+A focused `logcat` wrapper for Android security researchers. It filters logs from one app instead of the entire device, which makes vulnerability analysis faster and cleaner.
+
+## Contents
+
+- [Why use pidcat?](#why-use-pidcat)
+- [Installation](#installation)
+- [Make it universal on Windows](#make-it-universal-on-windows)
+- [Example commands](#example-commands)
+- [Original repository](#original-repository)
 
 ---
 
-## Why Use PIDCAT?
+## Why use pidcat?
 
-### adb logcat (Default behavior)
+### adb logcat, default behavior
 
 ```bash
 adb devices
@@ -16,7 +24,7 @@ adb -s <device-ip:port> logcat
 * Captures all logs from the device: system, apps, services.
 * Noisy and difficult to isolate logs for one app.
 
-### pidcat (Focused behavior)
+### pidcat, focused behavior
 
 ```bash
 pidcat -s <device-ip:port> <package.name>
@@ -26,26 +34,24 @@ pidcat -s <device-ip:port> <package.name>
 * Automatically updates PID if the app restarts.
 * Filters out irrelevant system logs.
 
----
-
 ## Installation
 
-### 1. Clone the Repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/JakeWharton/pidcat.git
 cd pidcat
 ```
 
-### 2. Run Directly
+### 2. Run directly
 
-#### On Linux/macOS:
+#### Linux and macOS
 
 ```bash
 ./pidcat.py -s <device-ip:port> <package.name>
 ```
 
-#### On Windows:
+#### Windows
 
 ```bash
 python pidcat.py -s <device-ip:port> <package.name>
@@ -53,7 +59,7 @@ python pidcat.py -s <device-ip:port> <package.name>
 
 ---
 
-## Make It Universal on Windows
+## Make it universal on Windows
 
 To run `pidcat` from any directory:
 
@@ -80,7 +86,7 @@ pidcat -s <device-ip:port> com.target.app
 
 ---
 
-## Example Commands
+## Example commands
 
 * For a remote device:
 
@@ -96,6 +102,6 @@ pidcat -s <device-ip:port> com.target.app
 
 ---
 
-## Original Repository
+## Original repository
 
 [https://github.com/JakeWharton/pidcat](https://github.com/JakeWharton/pidcat)

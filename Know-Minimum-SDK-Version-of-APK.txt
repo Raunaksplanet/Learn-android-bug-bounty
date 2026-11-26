@@ -1,1 +1,0 @@
-aapt dump badging app.apk | grep sdkVersion

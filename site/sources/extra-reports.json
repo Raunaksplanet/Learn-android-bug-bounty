@@ -1,0 +1,46 @@
+{
+  "reports": [
+    {
+      "class": "RCE/ACE",
+      "title": "RCE in TinyCards for Android",
+      "url": "https://hackerone.com/reports/281605",
+      "desc": ""
+    },
+    {
+      "class": "RCE/ACE",
+      "title": "Persistent arbitrary code execution in Android's Google Play Core Library",
+      "url": "https://hackerone.com/reports/971386",
+      "desc": ""
+    },
+    {
+      "class": "SQL Injection",
+      "title": "Another SQL Injection in Content Provider",
+      "url": "https://hackerone.com/reports/1650264",
+      "desc": ""
+    },
+    {
+      "class": "Steal files",
+      "title": "Steal files due to unprotected exported Activity",
+      "url": "https://hackerone.com/reports/161710",
+      "desc": ""
+    },
+    {
+      "class": "Bypasses",
+      "title": "Golden techniques to bypass host validations",
+      "url": "https://hackerone.com/reports/431002",
+      "desc": ""
+    },
+    {
+      "class": "Privilege Escalation",
+      "title": "Access of some not exported content providers",
+      "url": "https://hackerone.com/reports/272044",
+      "desc": ""
+    },
+    {
+      "class": "Content Provider LFI",
+      "title": "Content Provider Local File Inclusion",
+      "url": "https://www.youtube.com/watch?v=34tNXsqYe9A&list=PLxyxUSarDsdB3MDNzb6Q7GOaBch8IWbOj&index=17",
+      "desc": "Video walkthrough of local file inclusion through an exported content provider."
+    }
+  ]
+}

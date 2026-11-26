@@ -29,6 +29,8 @@ The report list is credited to B3nac. The guides and field notes are maintained 
 
 ## Website
 
+Live at <https://raunaksplanet.github.io/Learn-android-bug-bounty/>.
+
 The static site lives in [`site/`](site/). It includes the searchable report tree, the full resource library and the credit roll. It deploys with GitHub Actions through [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
 
 See the [site README](site/README.md) for local development and deployment details.

@@ -2,6 +2,7 @@
 
 A static, framework-free web index for
 [Learn Android Bug Bounty](https://github.com/Raunaksplanet/Learn-android-bug-bounty).
+Live at <https://raunaksplanet.github.io/Learn-android-bug-bounty/>.
 
 - `52` reports across `16` vulnerability classes
 - `142` practice apps, tools, guides, videos, command references and resources
